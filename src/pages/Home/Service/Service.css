@@ -1,12 +1,6 @@
 .service {
-    border: 1px solid blueviolet;
-    border-radius: 10px;
+
+
     text-align: center;
-    padding-bottom: 10px;
-
-
-}
-
-.service img {
-    width: 350px;
+    padding-bottom: 10px
 }
