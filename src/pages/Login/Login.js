@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 import './Login.css'
+import SocialLogin from './SocialLogin/SocialLogin';
 
 const Login = () => {
 
@@ -49,9 +50,6 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                    </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -67,6 +65,7 @@ const Login = () => {
             </Form>
 
             <p>New in Motor Services?? <Link to='/register' onClick={navigateRegister} className='text-danger p-auto'>Register Here</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
