@@ -9,10 +9,8 @@ import ServiceDetails from './pages/ServiceDetails/ServiceDetails';
 import NotFound from './pages/Shared/NotFound/NotFound';
 import Login from './pages/Login/Login';
 import Register from './Register/Register';
-
-import CheckOut from './pages/CheckOut/CheckOut';
-import RequireAuth from './pages/Login/RequireAuth/RequireAuth'
-
+import CheckOut from './pages/CheckOut/CheckOut'
+import RequireAuth from './pages/RequireAuth/RequireAuth';
 
 
 
