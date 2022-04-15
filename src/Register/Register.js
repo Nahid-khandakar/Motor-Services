@@ -4,6 +4,7 @@ import './Register.css'
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 import SocialLogin from '../pages/Login/SocialLogin/SocialLogin';
+import Loading from '../pages/Shared/Loading/Loading';
 
 const Register = () => {
 
@@ -24,6 +25,11 @@ const Register = () => {
 
     if (user) {
         console.log('user', user)
+    }
+
+
+    if (updating) {
+        return <Loading></Loading>
     }
 
     const handleRegister = async (event) => {
