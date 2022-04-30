@@ -13,6 +13,8 @@ import CheckOut from './pages/CheckOut/CheckOut'
 import RequireAuth from './pages/RequireAuth/RequireAuth';
 import AddService from './pages/AddService/AddService';
 import ManageServices from './pages/ManageServices/ManageServices';
+import { ToastContainer } from 'react-toastify';
+import Order from './pages/Order/Order';
 
 
 
@@ -39,9 +41,15 @@ function App() {
           <ManageServices></ManageServices>
         </RequireAuth>}></Route>
 
+
+        <Route path='/orders' element={<RequireAuth>
+          <Order></Order>
+        </RequireAuth>}></Route>
+
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
