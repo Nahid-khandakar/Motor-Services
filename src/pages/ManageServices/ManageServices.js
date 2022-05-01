@@ -11,7 +11,7 @@ const ManageServices = () => {
         const proceed = window.confirm('r u sure')
 
         if (proceed) {
-            const url = `http://localhost:5000/services/${id}`
+            const url = `https://sleepy-mountain-64974.herokuapp.com/services/${id}`
             fetch(url, {
                 method: 'DELETE',
             })

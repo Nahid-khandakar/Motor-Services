@@ -40,7 +40,7 @@ const CheckOut = () => {
             phone: event.target.phone.value
         }
 
-        axios.post('http://localhost:5000/order ', order)
+        axios.post('https://sleepy-mountain-64974.herokuapp.com/order ', order)
             .then(res => {
                 const { data } = res
                 if (data.insertedId) {

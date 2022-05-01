@@ -8,7 +8,7 @@ const AddService = () => {
     const onSubmit = data => {
         console.log(data)
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://sleepy-mountain-64974.herokuapp.com/services', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
